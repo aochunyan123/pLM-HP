@@ -13,18 +13,16 @@ This repo provides a simple pipeline:
 - ESM (facebookresearch/esm)
 - Biopython, NumPy, scikit-learn, pandas, tqdm
 
-Install:
-```bash
-pip install -r requirements.txt
 
-```bash
+
+
 
 1) Extract ESM2 embeddings
 Input: FASTA
 Output: pkl file: dict[str, np.ndarray], each array has shape (L, D) (BOS/EOS removed)
 
 
-
+```bash
 python scripts/extract_embeddings.py \
   --fasta data/raw/train.fasta \
   --out data/processed/train_embeddings.pkl \
