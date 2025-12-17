@@ -22,6 +22,8 @@ pip install -r requirements.txt
 Input: FASTA
 Output: pkl file: dict[str, np.ndarray], each array has shape (L, D) (BOS/EOS removed)
 
+bash
+
 python scripts/extract_embeddings.py \
   --fasta data/raw/train.fasta \
   --out data/processed/train_embeddings.pkl \
