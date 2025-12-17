@@ -31,9 +31,8 @@ python scripts/extract_embeddings.py \
   --max_tokens 2000 \
   --fp16
 
-Do the same for test:
 
-python scripts/01_extract_esm2_embeddings.py \
+python scripts/extract_embeddings.py \
   --fasta data/raw/test.fasta \
   --out data/processed/test_embeddings.pkl \
   --device cuda \
