@@ -1,8 +1,6 @@
-# Peptide Classification (ESM2 Residue Embeddings + BiLSTM)
+## pLM-HP
 
-This repo provides a simple pipeline:
-1) extract **per-residue ESM2 embeddings** from FASTA  
-2) train a **BiLSTM** classifier on the variable-length embeddings
+Peptide hormones are key regulators of metabolism, growth, and homeostasis, and they are important targets in peptide drug discovery. We propose **pLM-HP**, a deep learning framework that combines the ESM2 protein language model with a BiLSTM. Across benchmark evaluations, **pLM-HP** achieves accurate and well-balanced performance, outperforming existing peptide hormone predictors.
 
 ---
 
