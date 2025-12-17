@@ -15,14 +15,14 @@ This repo provides a simple pipeline:
 
 
 
-
-
-1) Extract ESM2 embeddings
-Input: FASTA
-Output: pkl file: dict[str, np.ndarray], each array has shape (L, D) (BOS/EOS removed)
-
+## Running
 
 ```bash
+1) Extract ESM2 embeddings
+Input: FASTA
+Output: pkl file: dict[str, np.ndarray], each array has shape (L, D) 
+
+
 python scripts/extract_embeddings.py \
   --fasta data/raw/train.fasta \
   --out data/processed/train_embeddings.pkl \
@@ -42,8 +42,7 @@ python scripts/01_extract_esm2_embeddings.py \
   --fp16
 
 
-2) Train the BiLSTM classifier
-Run from the project root:
+2) Train the model
 
 python -m scripts.train \
   --train_pkl data/processed/train_embeddings.pkl \
