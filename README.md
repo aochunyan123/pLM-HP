@@ -20,6 +20,10 @@ scikit-learn==1.7.2
 
 scipy==1.15.3
 
+fair-esm==2.0.0
+
+biopython==1.86
+
 
 
 ## Running
