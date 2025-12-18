@@ -7,11 +7,17 @@ Peptide hormones are key regulators of metabolism, growth, and homeostasis, and 
 ## Environment
 
 python==3.10
+
 torch==2.9.1
+
 networkx==3.4.2
+
 numpy==2.2.6
+
 pandas==2.3.3
+
 scikit-learn==1.7.2
+
 scipy==1.15.3
 
 
