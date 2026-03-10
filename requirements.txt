@@ -1,3 +1,7 @@
+# Exact ESM2 setting used in this work:
+# fair-esm==2.0.0
+# pretrained model: esm2_t12_35M_UR50D
+
 torch==2.9.1
 fair-esm==2.0.0
 numpy==2.2.6
