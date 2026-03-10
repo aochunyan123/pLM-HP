@@ -19,15 +19,14 @@ The framework was developed and tested under the following environment:
 - fair-esm 2.0.0
 - biopython 1.86
 
-**Note:** We recommend saving the above dependency list as a `requirements.txt` file in the root directory for standard one-command installation.
+**Note:** The required dependencies are listed in `requirements.txt` for standard one-command installation.
 
 ## End-to-End Reproducibility
 
 To run the pLM-HP framework end-to-end and reproduce the results, please follow the instructions below.
 
-## Environment setup
-
-We recommend using a virtual environment (e.g., Conda). Install the required dependencies as follows:
+**Input:** FASTA files  
+**Output:** PKL files in the format `dict[str, np.ndarray]`, where each array has shape `(L, D)`
 
 ```bash
 # Clone the repository
@@ -36,11 +35,6 @@ cd pLM-HP
 
 # Install dependencies
 pip install -r requirements.txt
-
-
-## End-to-End Reproducibility Checklist
-
-To run the pLM-HP framework end-to-end and reproduce the results, please follow these step-by-step instructions.
 
 
 ## Running
