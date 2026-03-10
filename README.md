@@ -24,6 +24,23 @@ fair-esm==2.0.0
 
 biopython==1.86
 
+*Tip: We recommend saving the above list as a `requirements.txt` file in the root directory for standard one-click installation.*
+
+
+## End-to-End Reproducibility Checklist
+
+To run the pLM-HP framework end-to-end and reproduce the results, please follow these step-by-step instructions.
+
+### Step 1: Environment Setup
+We highly recommend using a virtual environment (e.g., Conda). Install the required dependencies:
+
+```bash
+# Clone the repository
+git clone [https://github.com/aochunyan123/pLM-HP.git](https://github.com/aochunyan123/pLM-HP.git)
+cd pLM-HP
+
+# Install dependencies
+pip install -r requirements.txt
 
 ## Running
 
