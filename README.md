@@ -24,7 +24,7 @@ fair-esm==2.0.0
 
 biopython==1.86
 
-
+**Exact ESM2 setting used in this work:** `fair-esm==2.0.0`, pretrained model `esm2_t12_35M_UR50D`.
 
 ## Running
 
