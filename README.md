@@ -1,46 +1,47 @@
 ## pLM-HP
 
-Peptide hormones are key regulators of metabolism, growth, and homeostasis, and they are important targets in peptide drug discovery. We propose **pLM-HP**, a deep learning framework that combines the ESM2 protein language model with a BiLSTM. Across benchmark evaluations, **pLM-HP** achieves accurate and well-balanced performance, outperforming existing peptide hormone predictors.
+Peptide hormones are key regulators of metabolism, growth, and homeostasis, and represent important targets in peptide drug discovery. Here, we propose **pLM-HP**, a deep learning framework that combines the ESM2 protein language model with a BiLSTM. Across benchmark evaluations, **pLM-HP** achieves accurate and well-balanced performance and outperforms existing peptide hormone predictors.
 
 ---
 
+
 ## Environment
 
-python==3.10 
+The framework was developed and tested under the following environment:
 
-torch==2.9.1
+- Python 3.10
+- torch 2.9.1
+- networkx 3.4.2
+- numpy 2.2.6
+- pandas 2.3.3
+- scikit-learn 1.7.2
+- scipy 1.15.3
+- fair-esm 2.0.0
+- biopython 1.86
 
-networkx==3.4.2
+**Note:** We recommend saving the above dependency list as a `requirements.txt` file in the root directory for standard one-command installation.
 
-numpy==2.2.6
+## End-to-End Reproducibility
 
-pandas==2.3.3
+To run the pLM-HP framework end-to-end and reproduce the results, please follow the instructions below.
 
-scikit-learn==1.7.2
+## Environment setup
 
-scipy==1.15.3
+We recommend using a virtual environment (e.g., Conda). Install the required dependencies as follows:
 
-fair-esm==2.0.0
+```bash
+# Clone the repository
+git clone https://github.com/aochunyan123/pLM-HP.git
+cd pLM-HP
 
-biopython==1.86
-
-*Tip: We recommend saving the above list as a `requirements.txt` file in the root directory for standard one-click installation.*
+# Install dependencies
+pip install -r requirements.txt
 
 
 ## End-to-End Reproducibility Checklist
 
 To run the pLM-HP framework end-to-end and reproduce the results, please follow these step-by-step instructions.
 
-### Step 1: Environment Setup
-We highly recommend using a virtual environment (e.g., Conda). Install the required dependencies:
-
-```bash
-# Clone the repository
-git clone [https://github.com/aochunyan123/pLM-HP.git](https://github.com/aochunyan123/pLM-HP.git)
-cd pLM-HP
-
-# Install dependencies
-pip install -r requirements.txt
 
 ## Running
 
