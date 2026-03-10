@@ -1,9 +1,9 @@
-python_version == "3.10"
-torch == 2.9.1
-fair-esm == 2.0.0
-numpy == 2.2.6
-pandas == 2.3.3
-scipy == 1.15.3
-networkx == 3.4.2
-scikit-learn == 1.7.2
-biopython == 1.86
+torch==2.9.1
+fair-esm==2.0.0
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+networkx==3.4.2
+scikit-learn==1.7.2
+biopython==1.86
+tqdm>=4.66
