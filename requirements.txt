@@ -11,3 +11,4 @@ networkx==3.4.2
 scikit-learn==1.7.2
 biopython==1.86
 tqdm>=4.66
+openpyxl>=3.1
