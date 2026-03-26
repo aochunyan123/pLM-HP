@@ -21,10 +21,15 @@ The framework was developed and tested under the following environment:
 
 **Note:** The required dependencies are listed in `requirements.txt` for standard one-command installation.
 
-## End-to-End Reproducibility
+## Installation
 
-To run the pLM-HP framework end-to-end and reproduce the results, please follow the instructions below.
+Clone the repository and install the required dependencies:
 
+```bash
+git clone https://github.com/aochunyan123/pLM-HP.git
+cd pLM-HP
+pip install -r requirements.txt
+```
 **Input:** FASTA files  
 **Output:** PKL files in the format `dict[str, np.ndarray]`, where each array has shape `(L, D)`
 
