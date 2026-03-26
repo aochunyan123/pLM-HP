@@ -5,7 +5,7 @@ Peptide hormones are key regulators of metabolism, growth, and homeostasis, and 
 ---
 
 
-## Environment
+## Requirements
 
 The framework was developed and tested under the following environment:
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 **Input:** FASTA files  
 **Output:** PKL files in the format `dict[str, np.ndarray]`, where each array has shape `(L, D)`
 
-**Training set:**
+Extract embeddings for the training set:
 ```bash
 python scripts/extract_embeddings.py \
   --fasta data/raw/train.fasta \
@@ -47,7 +47,7 @@ python scripts/extract_embeddings.py \
   --fp16
 ```
 
-**Test set:**
+Extract embeddings for the test set:
 ```bash
 python scripts/extract_embeddings.py \
   --fasta data/raw/test.fasta \
