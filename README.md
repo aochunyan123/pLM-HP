@@ -32,6 +32,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+
 ### 1. Extract ESM2 embeddings
 
 **Input:** FASTA files  
@@ -72,3 +73,4 @@ python -m scripts.train \
   --weight_decay 1e-4 \
   --use_minmax \
   --save_metric BACC
+```
