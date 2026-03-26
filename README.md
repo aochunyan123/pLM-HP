@@ -7,7 +7,7 @@ Peptide hormones are key regulators of metabolism, growth, and homeostasis, and 
 
 ## Requirements
 
-The framework was developed and tested under the following environment:
+The framework was developed and tested with the following environment:
 
 - Python 3.10
 - torch 2.9.1
@@ -31,7 +31,7 @@ cd pLM-HP
 pip install -r requirements.txt
 ```
 
-## 1. Usage
+## Usage
 ### 1. Extract ESM2 embeddings
 
 **Input:** FASTA files  
@@ -59,8 +59,9 @@ python scripts/extract_embeddings.py \
   --fp16
 ```
 
-## 2. Model training
+### 2. Model training
 
+```bash
 python -m scripts.train \
   --train_pkl data/processed/train_embeddings.pkl \
   --test_pkl  data/processed/test_embeddings.pkl \
@@ -71,4 +72,4 @@ python -m scripts.train \
   --weight_decay 1e-4 \
   --use_minmax \
   --save_metric BACC
-
+```
