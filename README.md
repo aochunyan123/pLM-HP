@@ -31,7 +31,8 @@ cd pLM-HP
 pip install -r requirements.txt
 ```
 
-## 1. Extract ESM2 embeddings
+## 1. Usage
+### 1. Extract ESM2 embeddings
 
 **Input:** FASTA files  
 **Output:** PKL files in the format `dict[str, np.ndarray]`, where each array has shape `(L, D)`
@@ -58,7 +59,7 @@ python scripts/extract_embeddings.py \
   --fp16
 ```
 
-## 2. Running
+## 2. Model training
 
 python -m scripts.train \
   --train_pkl data/processed/train_embeddings.pkl \
