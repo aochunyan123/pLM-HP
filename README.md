@@ -36,6 +36,7 @@ pip install -r requirements.txt
 **Input:** FASTA files  
 **Output:** PKL files in the format `dict[str, np.ndarray]`, where each array has shape `(L, D)`
 
+**Training set:**
 ```bash
 python scripts/extract_embeddings.py \
   --fasta data/raw/train.fasta \
@@ -46,6 +47,7 @@ python scripts/extract_embeddings.py \
   --fp16
 ```
 
+**Test set:**
 ```bash
 python scripts/extract_embeddings.py \
   --fasta data/raw/test.fasta \
@@ -56,33 +58,7 @@ python scripts/extract_embeddings.py \
   --fp16
 ```
 
-## Running
-
-```bash
-1) Extract ESM2 embeddings
-Input: FASTA
-Output: pkl file: dict[str, np.ndarray], each array has shape (L, D) 
-
-
-python scripts/extract_embeddings.py \
-  --fasta data/raw/train.fasta \
-  --out data/processed/train_embeddings.pkl \
-  --device cuda \
-  --layer 12 \
-  --max_tokens 2000 \
-  --fp16
-
-
-python scripts/extract_embeddings.py \
-  --fasta data/raw/test.fasta \
-  --out data/processed/test_embeddings.pkl \
-  --device cuda \
-  --layer 12 \
-  --max_tokens 2000 \
-  --fp16
-
-
-2) Train the model
+## 2. Running
 
 python -m scripts.train \
   --train_pkl data/processed/train_embeddings.pkl \
