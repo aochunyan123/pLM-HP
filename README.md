@@ -30,17 +30,31 @@ git clone https://github.com/aochunyan123/pLM-HP.git
 cd pLM-HP
 pip install -r requirements.txt
 ```
+
+## 1. Extract ESM2 embeddings
+
 **Input:** FASTA files  
 **Output:** PKL files in the format `dict[str, np.ndarray]`, where each array has shape `(L, D)`
 
 ```bash
-# Clone the repository
-git clone https://github.com/aochunyan123/pLM-HP.git
-cd pLM-HP
+python scripts/extract_embeddings.py \
+  --fasta data/raw/train.fasta \
+  --out data/processed/train_embeddings.pkl \
+  --device cuda \
+  --layer 12 \
+  --max_tokens 2000 \
+  --fp16
+```
 
-# Install dependencies
-pip install -r requirements.txt
-
+```bash
+python scripts/extract_embeddings.py \
+  --fasta data/raw/test.fasta \
+  --out data/processed/test_embeddings.pkl \
+  --device cuda \
+  --layer 12 \
+  --max_tokens 2000 \
+  --fp16
+```
 
 ## Running
 
