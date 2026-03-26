@@ -72,4 +72,3 @@ python -m scripts.train \
   --weight_decay 1e-4 \
   --use_minmax \
   --save_metric BACC
-```
